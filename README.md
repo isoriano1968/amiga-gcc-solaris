@@ -1,6 +1,8 @@
 # Consider this fork as Solaris specific notes/patches to build on SPARC and x86 SunOS 11 systems
 
 - lhasa required and has to be build from source https://github.com/fragglet/lhasa (requires bison, libtool, autoconf, automake, gcc from your pkg publisher)
+- extern PTR .. declaration in projects/binutils/bfd/aout-amiga.c removed , included <stdlib.h>
+- references to msgpack_zone_free and msgpack_unpack_next in readelf.o cannot be resolved, 
 
 # amiga-gcc       [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YRRBRLCKDU3H6)
 The GNU C-Compiler with Binutils and other useful tools for cross development
