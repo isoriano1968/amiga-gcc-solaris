@@ -1,4 +1,4 @@
-# Consider this fork as Solaris specific notes/patches to build on SPARC and x86 SunOS 11 systems
+# Consider this fork as Solaris specific notes/patches to build on SPARC and x86 SunOS systems (Solaris, OpenIndiana and Tribblix all have their particular challenges when building the amiga-gcc cross-compiler)
 
 - lhasa required and has to be build from source https://github.com/fragglet/lhasa (requires bison, libtool, autoconf, automake, gcc from your pkg publisher)
 - extern PTR .. declaration in projects/binutils/bfd/aout-amiga.c removed , included <stdlib.h>
