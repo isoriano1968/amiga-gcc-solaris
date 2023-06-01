@@ -1,7 +1,7 @@
 # Consider this fork as Solaris specific notes/patches to build on SPARC (still not tested) and x86 SunOS systems (Solaris, OpenIndiana and Tribblix all have their particular challenges when building the amiga-gcc cross-compiler)
 
 - lhasa required and has to be build from source https://github.com/fragglet/lhasa (requires bison, libtool, autoconf, automake, gcc from your pkg publisher)
-- extern PTR .. declaration in projects/binutils/bfd/aout-amiga.c removed , (https://github.com/bebbo/amiga-gcc/issues/348)
+- extern PTR .. declaration in projects/binutils/bfd/aout-amiga.c , easy fix add #include <alloca.h> to aout-amiga.c (https://github.com/bebbo/amiga-gcc/issues/348)
 - references to msgpack_zone_free and msgpack_unpack_next in readelf.o cannot be resolved on OpenIndiana, works fine on Solaris 11.4.42 CBE
 - gdb, fd2sfd fail miserable during make ... ok SunOS is a bit "different"
 - start with a "make min" (there is in error during the install of fd2sfd https://github.com/bebbo/amiga-gcc/issues/258)
